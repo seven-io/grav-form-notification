@@ -1,0 +1,79 @@
+author:
+  email: support@sms77.io
+  name: sms77 e.K.
+demo: https://wwww.sms77.io
+dependencies:
+  - form
+description: SMS notification for Grav form whenever there is submission on your Grav form.
+docs: https://github.com/sms77io/grav-form-notification/master/README.md
+homepage: https://github.com/sms77io/grav-form-notification
+bugs: https://github.com/sms77io/grav-form-notification/issues
+form:
+  fields:
+    api_key:
+      help: Your sms77 API Key.
+      label: API Key
+      type: text
+    enable_notification_user:
+      default: 0
+      highlight: 1
+      label: Enable Auto-response
+      options:
+        0: Disabled
+        1: Enabled
+      type: toggle
+      validate:
+        type: bool
+    enable_notification:
+      default: 0
+      highlight: 1
+      label: Enable Notification
+      options:
+        0: Disabled
+        1: Enabled
+      type: toggle
+      validate:
+        type: bool
+    enabled:
+      default: 0
+      highlight: 1
+      label: Plugin status
+      options:
+        0: Disabled
+        1: Enabled
+      type: toggle
+      validate:
+        type: bool
+    from:
+      help: The name or phone where the SMS notification is coming from.
+      label: From
+      type: text
+    message:
+      help: The notification message you want to send.
+      label: Notification Message
+      type: text
+    phone_field:
+      help: The name of your phone form field.
+      label: Your phone form field.
+      type: text
+    to:
+      help: The phone where the SMS notification will be sent to.
+      label: To
+      type: text
+    msg_type:
+      default: sms
+      help: Decides the type of message to dispatch.
+      label: Message Type
+      options:
+        sms: SMS
+        voice: Voice
+      type: radio
+    user_response_msg:
+      help: The message to send to the form submitter.
+      label: Your auto-response msg.
+      type: text
+  validation: strict
+icon: plug
+license: MIT
+name: sms77 Form SMS Notification
+version: 1.0.0

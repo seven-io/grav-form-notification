@@ -1,0 +1,10 @@
+api_key: your-sms77-api-key # sms77 API key
+enable_notification_user: true # whether to message the number specified in the "phone_field" or not
+enable_notification: true # whether to message the number specified in "to" or not
+enabled: true # whether the plugin is enabled or not
+from: Grav # a custom sender name/number
+message: 'You just received a new submission for your form named {{FORM_NAME}}.' # the message text
+msg_type: sms # the message type: sms or voice
+phone_field: mobile_phone # the users phone field
+to: +491771783130 # the recipient number
+user_response_msg: 'Thanks for your form submission.' # the message to send to the number specified in the "phone_field"
