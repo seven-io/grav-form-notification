@@ -98,12 +98,9 @@ class Sms77FormNotificationPlugin extends Plugin {
         $apiKey = $this->getConfigValue('api_key');
         $body['from'] = $this->getConfigValue('from');
         $body['json'] = 1;
-        //$body['apiKey'] = $apiKey;
-        //dd($body);
         $ch = curl_init('https://gateway.sms77.io/api/' . $endpoint);
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($body));
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            // 'Accept: application/json',
             'Content-type: application/json',
             'SentWith: Grav',
             'X-Api-Key: ' . $apiKey,
