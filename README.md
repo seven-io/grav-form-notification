@@ -1,4 +1,6 @@
-# [sms77](https://www.sms77.io) Form Notification Plugin
+<img src="https://www.seven.io/wp-content/uploads/Logo.svg" width="250" />
+
+# [seven](https://www.seven.io) Form Notification Plugin
 
 A [Grav CMS](https://github.com/getgrav/grav) plugin allowing you to send SMS as well as
 making text-to-speech calls every time your Grav form gets submitted.
@@ -44,7 +46,7 @@ to `user/config/plugins/sms77-form-notification.yaml` and edit it accordingly.
 Have a look at the default configuration explaining the available options:
 
 ```yaml
-api_key: your-sms77-api-key # sms77 API key
+api_key: your-seven/sms77-api-key # seven.io API key
 enable_notification_user: true # whether to message the number specified in the "phone_field" or not
 enable_notification: true # whether to message the number specified in "to" or not
 enabled: true # whether the plugin is enabled or not
@@ -63,6 +65,6 @@ gets submitted, you should be receiving an SMS notification.
 
 #### Support
 
-Need help? Feel free to [contact us](https://www.sms77.io/en/company/contact/).
+Need help? Feel free to [contact us](https://www.seven.io/en/company/contact/).
 
 [![MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)
